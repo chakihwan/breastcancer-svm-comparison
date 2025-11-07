@@ -73,9 +73,7 @@
 | 원본 데이터 (특성 30개, test_size=0.2) | PCA 적용 (주성분 11개, test_size=0.3) |
 | :---: | :---: |
 | `svm_breastcancer_basic.py` 실행 결과 | `svm_breastcancer_pca.py` (n=11) 실행 결과 |
-| <img width="500" height="400" alt="Figure_11" src="https://github.com/user-attachments/assets/d854bbdf-b54f-4d94-a323-9aa2b59b6f43" />
- | <img width="500" height="400" alt="Figure_12" src="https://github.com/user-attachments/assets/c0e2cb5b-e77e-4c5e-8777-ff8d2263f11b" />
- |
+| <img width="500" height="400" alt="Figure_11" src="https://github.com/user-attachments/assets/d854bbdf-b54f-4d94-a323-9aa2b59b6f43" /> | <img width="500" height="400" alt="Figure_12" src="https://github.com/user-attachments/assets/c0e2cb5b-e77e-4c5e-8777-ff8d2263f11b" /> |
 | **정확도: 97.37%** (111/114) | **정확도: 98.25%** (168/171) |
 
 
