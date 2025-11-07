@@ -61,6 +61,7 @@
     * `svm_breastcancer_pca.py` 실행 결과, 주성분 개수에 따라 정확도가 변동했습니다.
     * 주성분이 11개일 때 **약 98.25%**의 정확도를 기록했습니다. (이는 `test_size=0.3` 기준)
 <img width="783" height="534" alt="image" src="https://github.com/user-attachments/assets/bbf48c28-a64c-4287-96ce-139bded523e8" />
+<img width="273" height="513" alt="image" src="https://github.com/user-attachments/assets/89ad7159-b9b9-4e82-9911-77ffb1905f82" />
 
 ---
 
