@@ -69,3 +69,13 @@ print(cf)
 
 # 테스트 데이터에 대한 정확도
 print(clf.score(X_test_std, y_test))
+
+# 혼동 행렬 시각화
+plt.figure(figsize=(6, 5))
+sns.heatmap(cf, annot=True, fmt='d', cmap='Blues',
+            xticklabels=['Pred: Malignant(0)', 'Pred: Benign(1)'],
+            yticklabels=['Actual: Malignant(0)', 'Actual: Benign(1)'])
+plt.title('Confusion Matrix (SVM - Breast Cancer)')
+plt.xlabel('Predicted Label')
+plt.ylabel('True Label')
+plt.show()
