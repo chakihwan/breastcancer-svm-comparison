@@ -151,7 +151,16 @@ plt.show()
 # y_pred = clf.predict(X_test)
 # print(y_pred)
 
-# # 혼동 행렬 및 정확도 출력
-# cf = confusion_matrix(y_test, y_pred)
-# print(f'Confusion Matrix:\n{cf}')
-# print(f'Accuracy: {clf.score(X_test, y_test)}')
+# 혼동 행렬 및 정확도 출력
+cf = confusion_matrix(y_test, y_pred)
+print(f'Confusion Matrix:\n{cf}')
+print(f'Accuracy: {clf.score(X_test, y_test)}')
+
+plt.figure(figsize=(6, 5))
+sns.heatmap(cf, annot=True, fmt='d', cmap='Blues',
+            xticklabels=['Pred: Malignant(0)', 'Pred: Benign(1)'],
+            yticklabels=['Actual: Malignant(0)', 'Actual: Benign(1)'])
+plt.title(f'Confusion Matrix (SVM + PCA, {n_components} Components)')
+plt.xlabel('Predicted Label')
+plt.ylabel('True Label')
+plt.show()
